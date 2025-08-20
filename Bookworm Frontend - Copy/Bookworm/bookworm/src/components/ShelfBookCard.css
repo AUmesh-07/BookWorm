@@ -1,0 +1,58 @@
+/* src/components/ShelfBookCard.css */
+
+.shelf-book-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.shelf-book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.shelf-book-card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.shelf-book-card .card-body {
+  padding: 1rem;
+}
+
+.shelf-book-card .card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.shelf-book-card .card-subtitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.shelf-book-card .my-shelf-info {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.shelf-book-card .my-shelf-info .card-text {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.shelf-book-card .my-shelf-info .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.shelf-book-card .my-shelf-info .btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}

@@ -1,0 +1,35 @@
+.hero-section {
+  background: linear-gradient(to right, #f7f0fa, #fefeff); /* Soft gradient background */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hero-section .display-4 {
+  font-size: 3.5rem; /* Adjust font size for larger screens */
+}
+
+@media (max-width: 768px) {
+  .hero-section .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+/* 1. Create a container for the image with a specific height */
+.hero-image-container {
+  height: 200px; /* You can adjust this value */
+  overflow: hidden; /* Ensures parts of the image outside the container are hidden */
+  border-radius: var(--bs-border-radius); /* Matches Bootstrap's rounding */
+  box-shadow: var(--bs-box-shadow-sm);   /* Matches Bootstrap's shadow */
+}
+
+/* 2. Make the image fill the container completely */
+.hero-image-container .img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This is the key part: it scales the image to fill the
+                        box while maintaining aspect ratio, cropping as needed. */
+}
+
+.hero-image-container:hover {
+  transform: scale(1.05); /* Scale up the entire container on hover */
+}

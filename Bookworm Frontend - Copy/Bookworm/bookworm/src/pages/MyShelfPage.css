@@ -1,0 +1,53 @@
+/* MyShelfPage.css */
+
+.my-shelf-page {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.search-bar .input-group {
+  max-width: 500px;
+}
+
+.search-bar .form-control {
+  border-color: #dee2e6;
+  border-radius: 8px;
+}
+
+.search-bar .form-control:focus {
+  box-shadow: none;
+  border-color: #9c27b0;
+}
+
+.search-bar .input-group-text {
+  border-right: 0;
+  background-color: transparent;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tabs .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  color: #6c757d;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs .nav-link.active-tab {
+  color: #e91e63 !important;
+  background-color: #f7e6fa;
+}
+
+.tabs .nav-link:hover {
+  background-color: #e91e6330;
+}

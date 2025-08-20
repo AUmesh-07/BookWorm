@@ -1,0 +1,18 @@
+/* OrderSummary.css */
+
+.order-summary {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.order-summary .btn-pink {
+  background-color: #e91e63;
+  border-color: #e91e63;
+  color: white;
+}
+
+.order-summary .btn-pink:hover {
+  background-color: #c2185b;
+  border-color: #c2185b;
+}

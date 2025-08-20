@@ -1,0 +1,52 @@
+.content-carousel {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem; /* Space for scrollbar */
+}
+
+.content-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.content-carousel::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.content-carousel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.carousel-item-wrapper {
+  flex: 0 0 auto; /* Prevent items from shrinking */
+  width: 250px; /* Adjust width of each card */
+  margin-right: 1.5rem; /* Space between cards */
+  scroll-snap-align: start;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) { /* Large desktops */
+  .carousel-item-wrapper {
+    width: 220px;
+  }
+}
+
+@media (max-width: 992px) { /* Tablets and smaller laptops */
+  .carousel-item-wrapper {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) { /* Smaller tablets and phones */
+  .carousel-item-wrapper {
+    width: 180px; /* Even smaller for mobile */
+  }
+}
+
+@media (max-width: 576px) { /* Extra small devices */
+  .carousel-item-wrapper {
+    width: 160px; /* Smallest size for narrow screens */
+  }
+}

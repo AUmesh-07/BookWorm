@@ -1,0 +1,29 @@
+.category-filter-sort {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.category-filter-sort .input-group {
+  max-width: 400px; /* Limit search input width */
+}
+
+.category-filter-sort .form-control {
+  border-color: #dee2e6;
+}
+
+.category-filter-sort .form-control:focus {
+  box-shadow: none;
+  border-color: #9c27b0; /* Highlight border on focus */
+}
+
+.category-filter-sort .input-group-text {
+  border-right: 0;
+  background-color: transparent;
+}
+
+.category-filter-sort .form-select {
+  width: auto; /* Adjust width based on content */
+  min-width: 180px;
+}

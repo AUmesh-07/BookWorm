@@ -1,0 +1,101 @@
+.library-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.library-card:hover {
+  transform: translateY(-3px);
+}
+
+.library-card-img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.library-card .badge {
+  font-size: 0.75rem;
+  padding: 0.3em 0.6em;
+  border-radius: 0.25rem;
+}
+
+/* Specific badge colors from previous components for consistency */
+.library-card .badge.bg-primary { background-color: #0d6efd !important; }
+.library-card .badge.bg-secondary { background-color: #6c757d !important; }
+.library-card .badge.bg-success { background-color: #198754 !important; }
+
+/* Status badges */
+.library-card .badge.bg-danger {
+  background-color: #dc3545 !important;
+}
+.library-card .badge.bg-success.rounded-pill {
+  background-color: #28a745 !important;
+}
+
+.library-card .return-by {
+  font-size: 0.9rem;
+  color: #0d6efd !important; /* A distinct color for the return link */
+}
+
+.library-card .btn-pink {
+  background-color: #e91e63;
+  border-color: #e91e63;
+  color: white;
+}
+
+.library-card .btn-pink:hover {
+  background-color: #c2185b;
+  border-color: #c2185b;
+}
+
+.library-card .btn-outline-secondary {
+  color: #6c757d;
+  border-color: #dee2e6;
+}
+
+.library-card .btn-outline-secondary:hover {
+  color: #e91e63;
+  border-color: #e91e63;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .library-card .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .library-card .col-auto:first-child {
+    margin-bottom: 1rem;
+  }
+  .library-card .col-auto:last-child {
+    margin-top: 1rem;
+  }
+  .library-card-img {
+    width: 150px;
+    height: 180px;
+  }
+  .library-card .card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .library-card .card-title,
+  .library-card .card-text {
+    text-align: center;
+  }
+  .library-card .badge {
+    margin: 0.5rem auto;
+    display: block;
+    width: fit-content;
+  }
+  .library-card .d-flex.flex-column.align-items-end {
+    align-items: center !important;
+    text-align: center;
+  }
+  .library-card .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

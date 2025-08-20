@@ -1,0 +1,130 @@
+.book-card-hover {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid #eee;
+}
+
+.book-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12) !important;
+}
+
+.book-card-hover .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.book-card-hover .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card-hover .badge {
+  font-size: 0.75rem;
+  padding: 0.3em 0.6em;
+  border-radius: 0.25rem;
+  align-self: flex-start;
+}
+
+.book-card-hover .card-title,
+.book-card-hover .card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-card-hover .card-title {
+  font-weight: bold;
+}
+
+.book-card-hover .card-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.book-card-hover .mt-auto {
+  padding-top: 1rem;
+}
+
+.book-card-hover .fs-5 {
+  font-size: 1.25rem !important;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.book-card-hover .d-flex.gap-2 {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.book-card-hover .btn {
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-card-hover .btn:hover {
+  transform: scale(1.05);
+}
+
+.book-card-hover .btn-primary {
+  background-color: #e91e63;
+  border-color: #e91e63;
+}
+
+.book-card-hover .btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.book-card-hover .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.book-card-hover .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-control .btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.quantity-display {
+  width: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-control-sm {
+  height: calc(1.5em + 0.5rem + 2px);
+  font-size: 0.875rem;
+}
+
+.go-to-cart {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.bg-pink-light {
+  background-color: #fce4ec;
+}
+
+.text-pink-dark {
+  color: #c2185b;
+}

@@ -1,0 +1,21 @@
+/* CartItemCard.css */
+
+.cart-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item-img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.quantity-selector .btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  line-height: 28px;
+}

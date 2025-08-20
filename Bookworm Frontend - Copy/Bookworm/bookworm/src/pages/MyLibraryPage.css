@@ -1,0 +1,40 @@
+.my-library-page {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.search-bar .input-group {
+  max-width: 500px;
+}
+
+.search-bar .form-control {
+  border-color: #dee2e6;
+}
+
+.search-bar .form-control:focus {
+  box-shadow: none;
+  border-color: #9c27b0;
+}
+
+.search-bar .input-group-text {
+  border-right: 0;
+  background-color: transparent;
+}
+
+.library-tabs .nav-link {
+  font-weight: bold;
+  padding-bottom: 0.75rem;
+  margin-right: 1.5rem;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+  color: #6c757d; /* Default text muted color */
+}
+
+.library-tabs .active-tab {
+  color: #e91e63 !important; /* Pink color for active tab */
+  border-bottom-color: #e91e63;
+}
+
+.library-tabs .nav-link:hover {
+  color: #e91e63;
+}

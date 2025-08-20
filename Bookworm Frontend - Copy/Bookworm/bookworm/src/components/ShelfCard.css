@@ -1,0 +1,57 @@
+/* ShelfCard.css */
+
+.shelf-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.shelf-card:hover {
+  transform: translateY(-3px);
+}
+
+.shelf-card-img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+
+.shelf-card .card-body {
+  padding: 1rem;
+}
+
+.shelf-card .author-text {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.shelf-card .progress-text {
+  font-size: 0.875rem;
+}
+
+.shelf-card .btn-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.shelf-card .text-pink {
+  color: #e91e63 !important;
+}
+
+.shelf-card .bg-pink {
+  background-color: #e91e63 !important;
+}
+
+.shelf-card .text-purple {
+  color: #9c27b0 !important;
+}
+
+.shelf-card .bg-purple {
+  background-color: #9c27b0 !important;
+}
+
+.shelf-card .text-success {
+  color: #198754 !important;
+}

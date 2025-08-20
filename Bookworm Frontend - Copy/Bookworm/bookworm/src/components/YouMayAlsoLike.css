@@ -1,0 +1,44 @@
+YouMayAlsoLike.css
+
+.you-may-also-like {
+  margin-top: 5rem;
+}
+
+.content-carousel {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.content-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.content-carousel::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.content-carousel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.carousel-item-wrapper {
+  flex: 0 0 auto;
+  width: 250px;
+  margin-right: 1.5rem;
+  scroll-snap-align: start;
+}
+
+.book-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.book-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}

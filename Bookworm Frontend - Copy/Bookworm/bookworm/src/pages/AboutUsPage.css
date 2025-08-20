@@ -1,0 +1,90 @@
+/* AboutUsPage.css */
+
+.about-us-page {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.hero-section,
+.mission-section {
+  padding: 3rem 0;
+}
+
+.hero-section h1 {
+  color: #e91e63; /* Pink color for the heading */
+}
+
+.mission-section h2 {
+  color: #9c27b0; /* Purple color for the heading */
+}
+
+.mission-list li {
+  font-size: 1.1rem;
+}
+
+.mission-list .bi-check-circle-fill {
+  font-size: 1.5rem;
+}
+
+.text-pink {
+  color: #e91e63 !important;
+}
+
+.team-section {
+  padding: 4rem 0;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #f8f9fa; /* Light border around image */
+}
+
+.team-card {
+  border-radius: 15px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-card .card-body {
+  padding-top: 0;
+}
+
+/* Ensure images and cards are responsive */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .hero-section img,
+  .mission-section img {
+    margin-top: 2rem;
+  }
+}
+
+.responsive-image {
+  max-width: 100%;
+  width: 100%; /* Ensures the image always takes up 100% of the container width */
+  height: 100%; /* Ensures the image always takes up 100% of the container height */
+  object-fit: cover; /* This is the key fix: it makes the image fill the container while maintaining aspect ratio */
+  display: block;
+}
+
+/*
+  This class defines a container with controlled dimensions and overflow behavior.
+  It will take up 100% of its parent's width, but not exceed 500px,
+  and it will be 300px tall. Any content that overflows is hidden.
+*/
+.my-container {
+  width: 100%;
+  max-width: 500px; /* Example: Prevents the container from getting too wide on large screens */
+  height: 300px;
+  overflow: hidden; /* This will clip any content that exceeds the container's boundaries */
+  margin: 0 auto;   /* Center the container horizontally */
+}

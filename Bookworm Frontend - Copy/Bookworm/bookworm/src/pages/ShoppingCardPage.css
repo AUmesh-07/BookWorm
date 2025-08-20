@@ -1,0 +1,57 @@
+
+.shopping-cart-page {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+/* Success Popup Styles */
+.success-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Increased to ensure it appears above other content */
+}
+
+.success-popup-content {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  animation: slideIn 0.3s ease-out;
+}
+
+.success-popup-content h4 {
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.success-popup-content p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.success-popup-content .btn-success {
+  padding: 8px 20px;
+  font-weight: 500;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Existing styles (if any) remain unchanged */

@@ -1,0 +1,11 @@
+.text-pink {
+  color: #e91e63;
+}
+
+.border-pink {
+  border-color: #f8bbd0 !important;
+}
+
+.btn:hover .text-pink {
+  color: #d81b60;
+}
